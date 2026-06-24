@@ -35,7 +35,7 @@ const db = mysql.createConnection({
      );
      `
      db.query(criarTabelaSQL, (erroTabela) => {
-        if (erroTablea){
+        if (erroTabela){
             console.log("Erro de verificação ou criação da tabela", erroTabela);
         } else {
             console.log("Tabela pronta para uso");
