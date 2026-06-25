@@ -31,7 +31,7 @@ const db = mysql.createConnection({
      idade INT NOT NULL,
      nivel VARCHAR(50) NOT NULL,
      horario VARCHAR(50) NOT NULL,
-     ativo BOOLEAN DEFAUL TRUE
+     ativo BOOLEAN DEFAULT TRUE
      );
      `
      db.query(criarTabelaSQL, (erroTabela) => {
