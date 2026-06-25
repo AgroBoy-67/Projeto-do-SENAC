@@ -86,7 +86,7 @@ app.post("/alunos", (req,res) => {
             if (erro) {
                 return res.status(500).json(erro);
             }
-            if (resultado.lenght > 0) {
+            if (resultado.length > 0) {
                 return res.status(400).json({
                     erro: "Já existe este nome cadastrado no banco"
                 })
@@ -137,7 +137,7 @@ app.post("/alunos", (req,res) => {
             if (erro) {
                 return res.status(500).json(erro);
             }
-            if (resultado.lenght === 0) {
+            if (resultado.length === 0) {
                 return res.status(404).json({
                     erro: 'Aluno não encontrado'
                 })
